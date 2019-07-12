@@ -13,7 +13,7 @@
         <script><![CDATA[#!/bin/bash
 HOSTNAME=$(hostname)
 ENV=$(env)
-echo "SERVER INFORMATION DETAILS"
+echo "SERVER INFORMATION DETAILS 2.0"
 echo "HOSTNAME="$HOSTNAME
 echo "VARIABLES ENV="$ENV]]></script>
         <scriptargs />
