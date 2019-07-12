@@ -1,0 +1,37 @@
+<joblist>
+  <job>
+    <context>
+      <options preserveOrder='true'>
+        <option name='param1' />
+        <option name='param2' />
+        <option name='param3' />
+        <option name='param4' />
+        <option name='param5' />
+      </options>
+    </context>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>7f627e5b-75a3-473d-9445-c3854624ccd1</id>
+    <loglevel>INFO</loglevel>
+    <name>test parameters from Jenkins</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <errorhandler>
+          <exec>echo "THIS ECHO COMMAND JUST SHOW WHEN PREVIOUS STEP HAS NOT WORKED PROPERLY"</exec>
+        </errorhandler>
+        <script><![CDATA[echo "TESTING PARAMETERS"
+echo "PARAM1="@option.param1@
+echo "PARAM2="@option.param2@
+echo "PARAM3="@option.param3@
+echo "PARAM4="@option.param4@
+echo "PARAM5="@option.param5@
+exit 1]]></script>
+        <scriptargs />
+      </command>
+    </sequence>
+    <uuid>7f627e5b-75a3-473d-9445-c3854624ccd1</uuid>
+  </job>
+</joblist>
