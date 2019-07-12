@@ -1,0 +1,24 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>95ef4188-3b94-4fc3-b4aa-9f1d7dbcc738</id>
+    <loglevel>INFO</loglevel>
+    <name>Get information server</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <script><![CDATA[#!/bin/bash
+HOSTNAME=$(hostname)
+ENV=$(env)
+echo "SERVER INFORMATION DETAILS"
+echo "HOSTNAME="$HOSTNAME
+echo "VARIABLES ENV="$ENV]]></script>
+        <scriptargs />
+      </command>
+    </sequence>
+    <uuid>95ef4188-3b94-4fc3-b4aa-9f1d7dbcc738</uuid>
+  </job>
+</joblist>
